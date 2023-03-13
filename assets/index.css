@@ -1,0 +1,36 @@
+body{
+    background-color: black;
+}
+
+.pres{
+    color:aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(70, 68, 66);
+    display: block;
+    margin: auto;
+    width: 1300px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.resultatOrdi{
+    text-align: center;
+}
+
+.resultatOrdi img{
+    height: 30px;
+    width: 30px;
+    color: white;
+}
+
+.jeu{
+    display: flex;
+    justify-content: center;
+}
+
+.resul{
+    color: aliceblue;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
