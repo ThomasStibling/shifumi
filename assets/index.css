@@ -34,3 +34,30 @@ body{
     margin: auto;
     text-align: center;
 }
+
+.score{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.scoreJoueur{
+    text-align: center;
+    background-color: aliceblue;
+    background-color: rgb(70, 68, 66);
+    color: white;
+    width: 400px;
+}
+
+.scoreOrdi{
+    text-align: center;
+    background-color: aliceblue;
+    background-color: rgb(70, 68, 66);
+    color: white;
+    width: 400px;
+}
+
+.monScore{
+    text-align: center;
+    color: aliceblue;
+    font-size: xx-large;
+}

@@ -2,10 +2,16 @@ const p = document.querySelector(".pierre");
 const f = document.querySelector(".feuille");
 const c = document.querySelector(".ciseau");
 const resultatPrompt = document.querySelector(".res");
-const joueur = document.querySelector(".joueur");
+const scoreJoueur = document.querySelector(".scoreJoueur");
+const scoreOrdi = document.querySelector(".scoreOrdi");
 const ordiPrompt = document.querySelector(".resultatOrdi");
+const nomJOueur = document.querySelector(".playerName");
+const points = document.querySelector(".points");
+
 const images = ['assets/img/Pierre.png','assets/img/Feuille.png','assets/img/Ciseau.png' ]
+
 var resultat = "";
+var mesPoints = 0;
 
 class Joueur {
 
@@ -18,8 +24,9 @@ class Joueur {
 
 window.addEventListener("load", function(){
     var j=new Joueur('Thomas', 'Stibling', '04/09/2002');
-    console.log(j)
-    joueur.textContent = j.prenom +" "+ j.nom +" "+ " "+j.anniversaire
+    console.log(j);
+    nomJOueur.textContent += j.prenom +" "+ j.nom ;
+    points.textContent = mesPoints;
 });
 
 //1 = pierre
@@ -67,11 +74,15 @@ function jeu(user, ordi){
             }
             if(ordi === 3){
                 resultat = "Gagné";
+                mesPoints++;
+                points.textContent = mesPoints;
             }
         break
         case 2: 
             if(ordi === 1){
                 resultat = "Gagné";
+                mesPoints++;
+                points.textContent = mesPoints;
             }
             if(ordi === 2){
                 resultat = "Egalité";
@@ -86,6 +97,8 @@ function jeu(user, ordi){
             }
             if(ordi === 2){
                 resultat = "Gagné";
+                mesPoints++;
+                points.textContent = mesPoints;
             }
             if(ordi === 3){
                 resultat = "Egalité";
